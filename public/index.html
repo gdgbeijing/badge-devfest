@@ -294,19 +294,14 @@
       <div class="input">
         <label>图片类型</label>
         <div class="select-container">
-          <div
-            class="select"
-            id="original"
-            selected
-            onclick="changeShape('original')"
-          >
-            原图
-          </div>
-          <div class="select" id="square" onclick="changeShape('square')">
-            正方形
+          <div selected class="select" id="square" onclick="changeShape('square')">
+            方形
           </div>
           <div class="select" id="circle" onclick="changeShape('circle')">
             圆形
+          </div>
+          <div class="select" id="original" onclick="changeShape('original')">
+            原图
           </div>
         </div>
       </div>
@@ -388,10 +383,10 @@
     };
 
     const banner = new Image();
-    banner.src = "./gdg.png";
     banner.onload = () => {
       draw();
     };
+    banner.src = "./gdg.png";
 
     const draw = () => {
       if (image) {
