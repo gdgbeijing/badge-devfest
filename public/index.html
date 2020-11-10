@@ -1,71 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-  <title>DevFest India Profile Badge Generator</title>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DevFest 胸卡生成器</title>
   <meta
     name="description"
-    content="DevFest India Profile Badge Generator"
+    content="DevFest 胸卡生成器"
   />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" href="./favicon.ico" />
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta
     content="black-translucent"
     name="apple-mobile-web-app-status-bar-style"
   />
-  <meta
-    name="description"
-    content="DevFest India - India's biggest developer conclave with 40+ GDG communities. Separated by distance, united by passion.
-"
-  />
-  <meta name="author" content="DevFest India Team" />
-  <meta property="og:title" content="DevFest India Profile Badge Generator" />
-  <meta property="og:type" content="website" />
-  <meta
-    property="og:image"
-    content="https://raw.githubusercontent.com/DevFest-India/website-data/master/DevFest%20Twitter.png"
-  />
-  <meta property="og:url" content="https://devfestindia.com" />
-  <meta property="og:site_name" content="DevFest India Profile Badge Generator" />
-  <meta
-    property="og:description"
-    content="DevFest India - India's biggest developer conclave with 40+ GDG communities. Separated by distance, united by passion.
-"
-  />
-  <meta property="keywords" content="devfest, devfestindia, gdg, wtm" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://devfestindia.com" />
-  <meta name="twitter:title" content="DevFest India Profile Badge Generator" />
-  <meta
-    name="twitter:description"
-    content="DevFest India - India's biggest developer conclave with 40+ GDG communities. Separated by distance, united by passion.
-"
-  />
-  <meta
-    name="twitter:image"
-    content="https://raw.githubusercontent.com/DevFest-India/website-data/master/DevFest%20Twitter.png"
-  />
-  <meta name="twitter:tags" content="devfest, devfestindia, gdg, wtm" />
-  <!-- Social Meta -->
+  <meta property="keywords" content="devfest, china, gdg, wtm" />
   <link
     crossorigin="anonymous"
     href="https://fonts.googleapis.com/icon?family=Google+Sans:400&display=swap"
     rel="stylesheet"
   />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-176733991-3"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "UA-176733991-3");
-  </script>
 
   <style>
     * {
@@ -312,18 +266,14 @@
       }
     }
   </style>
-
+</head>
+<body>
   <header>
     <div class="header-flex-wrapper">
         <div class="title">
-          DevFest India Badge Generator
+          DevFest 胸卡生成器
         </div>
         <div>
-          <ul class="list-unstyled  badge-list">
-            <li><a href="https://devfestindia.com" target="_blank" class="border-btn" rel = "noreferrer">Website</a></li>
-            <li><a href="http://feedback.devfestindia.com" target="_blank" class="blue-btn" rel = "noreferrer">Feedback</a></li>
-            <!-- <li><a href="https://devfestindia.com/registration" target="_blank" class="blue-btn" rel = "noreferrer">Registration</a></li> -->
-          </ul>
         </div>
       </div>
   </header>
@@ -331,8 +281,8 @@
   <div class="main-container">
     <div class="input-panel">
       <div class="input">
-        <label>Profile Picture</label>
-        <button class="button" onclick="uploadImage()">Upload Image</button>
+        <label>个人图片</label>
+        <button class="button" onclick="uploadImage()">上传图片</button>
         <input
           class="profile-input"
           type="file"
@@ -342,7 +292,7 @@
         />
       </div>
       <div class="input">
-        <label>Image Shape</label>
+        <label>图片类型</label>
         <div class="select-container">
           <div
             class="select"
@@ -350,13 +300,13 @@
             selected
             onclick="changeShape('original')"
           >
-            Original
+            原图
           </div>
           <div class="select" id="square" onclick="changeShape('square')">
-            Square
+            正方形
           </div>
           <div class="select" id="circle" onclick="changeShape('circle')">
-            Circle
+            圆形
           </div>
         </div>
       </div>
@@ -528,4 +478,5 @@
       a.click();
     };
   </script>
+</body>
 </html>
