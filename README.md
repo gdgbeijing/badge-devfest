@@ -1,3 +1,8 @@
+# Copy of DevFest India Badge Generator
+This forked badge generator with some modification is used for 2020 China DevFest.
+
+below are original information.
+
 # DevFest India Badge Generator
 
 <img src="https://raw.githubusercontent.com/DevFest-India/website-data/master/screenshot-badge-devfestindia-com-1604646057239.png"/>
